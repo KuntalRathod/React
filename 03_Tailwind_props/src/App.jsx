@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Card username="ChaiAurCode" btnText="click me" />
-      <Card username="Kuntal" />
+      <Card username="Kuntal" btnText="follow" />
 
     </>
   )

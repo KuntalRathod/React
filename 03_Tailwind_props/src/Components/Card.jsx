@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card = ({username,btnText}) => {
+const Card = ({username,btnText=''}) => {
     console.log(username);
     return (
       <>
@@ -22,7 +22,7 @@ const Card = ({username,btnText}) => {
               Excepturi, debitis?
             </p>
             <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
-              {btnText} →
+              {btnText}→
             </button>
           </div>
         </div>
