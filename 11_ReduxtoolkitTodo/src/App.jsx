@@ -6,11 +6,13 @@ function App() {
 
   return (
     <>
-      <h1>Learn about redux tool kit</h1>
+      <h1 className="text-2xl font-semibold mb-4">
+        Learn about redux tool kit
+      </h1>
       <AddTodo />
       <Todos />
     </>
-  )
+  );
 }
 
 export default App;
