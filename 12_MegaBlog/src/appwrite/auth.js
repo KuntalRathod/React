@@ -1,6 +1,5 @@
-import config from '../config.js';
-
 import { Client, Account, ID } from "appwrite";
+import conf from "../conf/conf";
 
 
 export class AuthService{ 
@@ -9,8 +8,8 @@ export class AuthService{
 
     constructor() {
         this.client
-          .setEndpoint(config.appwriteUrl)
-            .setProject(config.appwriteProjectId);
+          .setEndpoint(conf.appwriteUrl)
+            .setProject(conf.appwriteProjectId);
         this.account = new Account(this.client);
     }
 
@@ -55,11 +54,10 @@ export class AuthService{
             
         } catch (error) {
             console.log("Appwrite service :: logout :: error",error)
-            
-            
         }
     }
 }
+
 
 const authService = new AuthService();
 
