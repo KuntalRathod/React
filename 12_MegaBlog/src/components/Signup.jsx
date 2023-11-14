@@ -3,9 +3,11 @@ import React from 'react';
 import authService from "../appwrite/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { login } from "../store/authSlice";
-import { Button, Logo, Input } from "../index";
+import Input from "./Input";
+import Logo from "./Logo";
 import { useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
+import Button from "./Button";
 
 
 
@@ -77,7 +79,7 @@ const Signup = () => {
                     .test(value) || "Please enter a valid email"
                 }
               })}
-            /> 
+            />
             <Input
               label="Password: "
               type="password"
@@ -98,7 +100,6 @@ const Signup = () => {
           </div>
 
         </form>
-
 
       </div>
     </div>
